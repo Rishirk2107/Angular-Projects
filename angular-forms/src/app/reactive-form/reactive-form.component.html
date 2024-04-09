@@ -1,0 +1,12 @@
+<h2>Reactive Form</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" formControlName="name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" formControlName="email">
+
+  <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>
+
+<p *ngIf="submitted && form.invalid">Form is invalid</p>
