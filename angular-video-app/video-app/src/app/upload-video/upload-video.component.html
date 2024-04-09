@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <h1>Upload Video</h1>
+    <input type="file" (change)="onFileSelected($event)" accept="video/*" />
+    <button class="btn btn-primary" (click)="uploadVideo()">Upload</button>
+    <p *ngIf="uploadProgress !== null">{{ uploadProgress }}% uploaded</p>
+    <video controls *ngIf="videoUrl">
+        <source [src]="videoUrl" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
