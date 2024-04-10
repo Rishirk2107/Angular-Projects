@@ -11,7 +11,7 @@ npm install -g @angular/cli@16.0.0
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/video-app.git
+git clone https://github.com/Rishirk2107/Angular-Projects.git
 ```
 ### Step1: Navigate to the Project U want
 
